@@ -40,7 +40,9 @@
 </head>
 
 <body class="font-lato">
-    <header class="max-w-[1440px] m-auto my-12">
+    <header class="max-w-[1440px] m-auto">
+
+        <!-- nav for small and medium screens -->
         <nav class="lg:hidden">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
@@ -76,7 +78,8 @@
 
         </nav>
 
-        <nav class="hidden bg-fruit-pink lg:grid grid-cols-3 items-center px-12 py-8 rounded-full text-white">
+        <!-- nav for large screen -->
+        <nav class="hidden bg-fruit-pink lg:grid grid-cols-3 items-center px-12 py-8 rounded-full my-12 text-white">
             <div>
                 <ul class="flex gap-8">
                     <li><a href="">Home</a></li>
@@ -102,8 +105,121 @@
 
 
         <!-- banner -->
-        <section>
+        <section class="max-w-[1440px] max-h-[600px] m-auto my-2 flex flex-col justify-center">
+            <div class="carousel w-full ">
+                <div id="slide1" class="carousel-item relative w-full " style="background-image: url('./images/banner1.png'); background-repeat: no-repeat;
+                    background-size:cover;">
+                    <div
+                        class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%]">
+                        <div class="hero-content text-center ">
+                            <div class="max-w-2xl ">
+                                <h1 class="lg:text-7xl text-2xl font-bold font-lato">Exotic tastes at your doorstep</h1>
+                                <p class="py-6 text-sm lg:text-xl">We supply highly quality organic products</p>
+                                <button
+                                    class="btn btn-primary bg-fruit-pink border-none text-white hover:bg-white hover:text-fruit-pink">Get
+                                    Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4"
+                            class="btn btn-circle bg-black text-white border-none scale-50 md:scale-100">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle bg-black text-white border-none scale-50 md:scale-100">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full " style="background-image: url('./images/banner2.png'); background-repeat: no-repeat;
+                background-size:100% 100%;">
+                    <div
+                        class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%]">
+                        <div class="hero-content text-center ">
+                            <div class="max-w-2xl ">
+                                <h1 class="lg:text-7xl text-2xl font-bold font-lato">Exotic tastes at your doorstep</h1>
+                                <p class="py-6 text-sm lg:text-xl">We supply highly quality organic products</p>
+                                <button
+                                    class="btn btn-primary bg-fruit-pink border-none text-white hover:bg-white hover:text-fruit-pink">Get
+                                    Started</button>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1"
+                            class="btn btn-circle bg-black text-white border-none scale-50 md:scale-100">❮</a>
+                        <a href="#slide3"
+                            class="btn btn-circle bg-black text-white border-none scale-50 md:scale-100">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full " style="background-image: url('./images/banner3.png'); background-repeat: no-repeat;
+                background-size:100% 100%;">
+                    <div
+                        class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%]">
+                        <div class="hero-content text-center ">
+                            <div class="max-w-2xl ">
+                                <h1 class="lg:text-7xl text-2xl font-bold font-lato">Exotic tastes at your doorstep</h1>
+                                <p class="py-6 text-sm lg:text-xl">We supply highly quality organic products</p>
+                                <button
+                                    class="btn btn-primary bg-fruit-pink border-none text-white hover:bg-white hover:text-fruit-pink">Get
+                                    Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2"
+                            class="btn btn-circle bg-black text-white border-none scale-50 md:scale-100">❮</a>
+                        <a href="#slide4"
+                            class="btn btn-circle bg-black text-white border-none scale-50 md:scale-100">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full " style="background-image: url('./images/banner4.png'); background-repeat: no-repeat;
+                background-size:100% 100%;">
+                    <div
+                        class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%]">
+                        <div class="hero-content text-center ">
+                            <div class="max-w-2xl ">
+                                <h1 class="lg:text-7xl text-2xl font-bold font-lato">Exotic tastes at your doorstep
+                                </h1>
+                                <p class="py-6 text-sm lg:text-xl">We supply highly quality organic products</p>
+                                <button
+                                    class="btn btn-primary bg-fruit-pink border-none text-white hover:bg-white hover:text-fruit-pink">Get
+                                    Started</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3"
+                            class="btn btn-circle bg-black text-white border-none scale-50 md:scale-100">❮</a>
+                        <a href="#slide1"
+                            class="btn btn-circle bg-black text-white border-none scale-50 md:scale-100">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="hidden md:block max-w-6xl m-auto bg-white rounded-lg shadow-lg -mt-20 z-20 p-5 md:scale-75 lg:scale-100">
+                <div class=" grid grid-cols-5 items-center justify-between">
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="./images/fruit1.png" alt="">
+                        <figcaption class="p-5">Grape</figcaption>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="./images/fruit2.png" alt="">
+                        <figcaption class="p-5">Grape</figcaption>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="./images/fruit3.png" alt="">
+                        <figcaption class="p-5">Grape</figcaption>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="./images/fruit4.png" alt="">
+                        <figcaption class="p-5">Grape</figcaption>
+                    </div>
+                    <div class="flex flex-col items-center justify-center">
+                        <img src="./images/fruit5.png" alt="">
+                        <figcaption class="p-5">Grape</figcaption>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </header>
     <main>
