@@ -30,7 +30,7 @@
 
 <body>
     <header class="max-w-[1440px] m-auto my-12">
-        <nav>
+        <nav class="lg:hidden">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
                     <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
@@ -59,6 +59,31 @@
             </div>
 
         </nav>
+
+        <nav class="hidden bg-fruit-pink lg:grid grid-cols-3 items-center px-12 py-8 rounded-full text-white">
+            <div>
+                <ul class="flex gap-8">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="btn-ghost text-5xl flex">
+                    <img src="./images/logo.png" alt="">
+                    Fruit Brust
+                </button>
+            </div>
+            <div>
+                <div class="relative form-control  flex flex-row justify-end">
+                    <input type="text" placeholder="Search" class="input rounded-full w-96" />
+                    <button class=" absolute right-0 btn btn-ghost text-black  border-none  rounded-full"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </nav>
+
 
         <!-- banner -->
         <section>
