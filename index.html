@@ -1,14 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruits Brust | ASSIGNMENT 3</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/4309854b58.js" crossorigin="anonymous"></script>
+
+    <!-- custom colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'fruit-pink': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
+    <header class="max-w-[1440px] m-auto my-12 text-white">
+        <nav class="bg-fruit-pink grid grid-cols-3 items-center px-12 py-8 rounded-full">
+            <div>
+                <ul class="flex gap-8">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
+                </ul>
+            </div>
+            <div>
+                <button class="btn-ghost text-5xl flex">
+                    <img src="./images/logo.png" alt="">
+                    Fruit Brust
+                </button>
+            </div>
+            <div>
+                <div class="relative form-control  flex flex-row justify-end">
+                    <input type="text" placeholder="Search" class="input rounded-full w-96" />
+                    <button class=" absolute right-0 btn btn-ghost text-black  border-none  rounded-full"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </nav>
 
+        <!-- banner -->
+        <section>
+
+        </section>
+    </header>
+    <main>
+        <!-- deal of the day -->
+        <section></section>
+
+        <!-- Meet the team -->
+        <section></section>
+
+        <!-- why choose us -->
+        <section></section>
+
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
