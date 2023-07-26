@@ -65,7 +65,7 @@
     <header class="max-w-[1440px] m-auto">
 
         <!-- nav for small and medium screens -->
-        <nav class="lg:hidden mt-12">
+        <nav class="lg:hidden mt-10">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
                     <a class="btn btn-ghost normal-case text-xl">
@@ -255,31 +255,47 @@
             <div class="deal flex flex-col lg:flex-row justify-between items-center">
                 <div class="max-w-2xl">
                     <h2 class="text-xl text-center md:text-start md:text-5xl font-bold mt-12">Deal of the day</h2>
-                    <p class="text-gray-500 pt-6 text-sm md:text-base">Welcome to our delightful 'Deal of the Day',
+                    <p class="text-gray-500 text-center md:text-start pt-6 text-sm md:text-base">Welcome to our
+                        delightful 'Deal of the Day',
                         where every day brings you an exciting opportunity to savor the finest, freshest fruits
                         at unbeatable prices. Don't miss out!</p>
                 </div>
                 <div class="max-w-lg">
 
-                    <div class="flex justify-between pt-5">
+                    <div class="flex items-center justify-between pt-5">
                         <div class="flex flex-col justify-center items-center text-center">
                             <p id="days" class="text-2xl md:text-5xl font-bold">00</p>
-                            <span class="text-gray-500">Days</span>
+                            <span class="text-gray-500 text-xs lg:text-base">Days</span>
                         </div>
-                        <img src="./images/three-dots.svg" alt="" width="40px">
+                        <div class="px-3 lg:text-3xl">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <div>
+                                <p class="text-gray-500 text-xs lg:text-base">&nbsp</p>
+                            </div>
+                        </div>
                         <div class="flex flex-col justify-center text-center">
                             <p id="hours" class="text-2xl md:text-5xl font-bold">00</p>
-                            <span class="text-gray-500">Hours</span>
+                            <span class="text-gray-500 text-xs lg:text-base">Hours</span>
                         </div class="flex flex-col justify-center text-center">
-                        <img src="./images/three-dots.svg" alt="" width="40px">
+                        <div class="px-3 lg:text-3xl">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <div>
+                                <p class="text-gray-500 text-xs lg:text-base">&nbsp</p>
+                            </div>
+                        </div>
                         <div class="flex flex-col justify-center text-center">
                             <p id="minutes" class="text-2xl md:text-5xl font-bold">00</p>
-                            <span class="text-gray-500">Minutes</span>
+                            <span class="text-gray-500 text-xs lg:text-base">Minutes</span>
                         </div>
-                        <img src="./images/three-dots.svg" alt="" width="40px">
-                        <div>
+                        <div class="px-3 lg:text-3xl">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <div>
+                                <p class="text-gray-500 text-xs lg:text-base">&nbsp</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center text-center">
                             <p id="seconds" class="text-2xl md:text-5xl font-bold">00</p>
-                            <span class="text-gray-500">Seconds</span>
+                            <span class="text-gray-500 text-xs lg:text-base">Seconds</span>
                         </div>
                     </div>
                 </div>
@@ -290,7 +306,7 @@
         <!-- modal -->
         <section>
             <div
-                class="max-w-[90%] md:max-w-[1440px] m-auto my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
+                class="max-w-[90%] md:max-w-[1440px] m-auto lg:my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center">
                 <!-- card1 -->
                 <div class="card bg-base-100 border-2">
                     <figure class="px-10 pt-10">
@@ -524,7 +540,7 @@
         </section>
 
         <!-- Meet the team -->
-        <section class="max-w-[90%] md:max-w-[1440px] m-auto mt-40">
+        <section class="max-w-[90%] md:max-w-[1440px] m-auto lg:mt-40">
             <div class="hero lg:min-h-[69%]" style="background-image: url(./images/banner1.png);">
                 <div class="hero-overlay bg-black bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content text-white flex-col">
@@ -624,7 +640,7 @@
         </section>
 
         <!-- why choose us -->
-        <section class="max-w-[90%] md:max-w-[1440px] m-auto mt-36">
+        <section class="max-w-[90%] md:max-w-[1440px] m-auto lg:mt-36">
             <div class="max-w-2xl m-auto text-center">
                 <h1 class="text-xl text-center md:text-5xl font-bold mt-12">Why Choose Us</h1>
                 <p class="text-gray-500 pt-6 text-sm md:text-base">Discover the taste of freshness with us. We offer
@@ -632,7 +648,7 @@
                 </p>
             </div>
             <div class="flex flex-col md:flex-row md:flex-wrap lg:flex-nowrap md:justify-center lg:gap-12">
-                <div class="flex flex-col items-center justify-center md:order-3 lg:order-2 mt-6">
+                <div class="flex flex-col items-center justify-center md:order-3 lg:order-2 mt-6 mb-4">
                     <img src="./images/whychoose1.png" alt="">
                 </div>
                 <div class="lft md:order-1  lg:order-1">
@@ -647,7 +663,9 @@
                             <div class="max-w-xs flex justify-center lg:justify-start">
                                 <hr class="w-28 border-gray-500">
                             </div>
-                            <p class="pt-4 max-w-xs text-sm md:text-base">Professional employees are there for you to
+                            <p class="pt-4 max-w-[236px] md:max-w-xs text-sm md:text-base text-gray-600">Professional
+                                employees are
+                                there for you to
                                 pick the most amazing
                                 and
                                 fresh
@@ -665,11 +683,8 @@
                             <div class="max-w-xs flex justify-center lg:justify-start">
                                 <hr class="w-28 border-gray-500">
                             </div>
-                            <p class="pt-4 max-w-xs text-sm md:text-base">Professional employees are there for you to
-                                pick the most amazing
-                                and
-                                fresh
-                                fruits.</p>
+                            <p class="pt-4 max-w-[236px] md:max-w-xs text-sm md:text-base text-gray-600">Discover the
+                                essence of pure freshness at our fruit selling website - where fresh is best!</p>
                         </div>
                     </div>
                     <!-- card3 -->
@@ -683,11 +698,9 @@
                             <div class="max-w-xs flex justify-center lg:justify-start">
                                 <hr class="w-28 border-gray-500">
                             </div>
-                            <p class="pt-4 max-w-xs text-sm md:text-base">Professional employees are there for you to
-                                pick the most amazing
-                                and
-                                fresh
-                                fruits.</p>
+                            <p class="pt-4 max-w-[236px] md:max-w-xs text-sm md:text-base text-gray-600">Delight your
+                                loved ones with the gift of nature's sweetness, our website's certificate.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -702,12 +715,8 @@
                             <div class="max-w-xs flex justify-center lg:justify-end">
                                 <hr class="w-28 border-gray-500">
                             </div>
-                            <p class="pt-4 max-w-xs text-sm md:text-base lg:text-right">Professional employees are there
-                                for you to
-                                pick the most amazing
-                                and
-                                fresh
-                                fruits.</p>
+                            <p class="pt-4 max-w-[236px] md:max-w-xs text-sm md:text-base lg:text-right text-gray-600">
+                                Discover the Integrated Supplier behind our fruit-selling website, ensuring quality.</p>
                         </div>
                     </div>
                     <!-- card1 -->
@@ -720,12 +729,9 @@
                             <div class="max-w-xs flex justify-center lg:justify-end">
                                 <hr class="w-28 border-gray-500">
                             </div>
-                            <p class="pt-4 max-w-xs text-sm md:text-base lg:text-right">Professional employees are there
-                                for you to
-                                pick the most amazing
-                                and
-                                fresh
-                                fruits.</p>
+                            <p class="pt-4 max-w-[236px] md:max-w-xs text-sm md:text-base lg:text-right text-gray-600">
+                                Embrace sustainability with our fruit-selling website, committed to eco-friendly
+                                practices.</p>
                         </div>
                     </div>
                     <!-- card1 -->
@@ -739,12 +745,8 @@
                             <div class="max-w-xs flex justify-center lg:justify-end">
                                 <hr class="w-28 border-gray-500">
                             </div>
-                            <p class="pt-4 max-w-xs text-sm md:text-base lg:text-right">Professional employees are there
-                                for you to
-                                pick the most amazing
-                                and
-                                fresh
-                                fruits.</p>
+                            <p class="pt-4 max-w-[236px] md:max-w-xs text-sm md:text-base lg:text-right text-gray-600">
+                                Explore exclusive perks in our Benefits Only section, rewarding you for choosing us.</p>
                         </div>
                     </div>
                 </div>
@@ -753,9 +755,32 @@
 
     </main>
 
-    <footer>
 
+    <footer class="  m-auto lg:mt-36  p-10 bg-[#121212] text-base-content text-white ">
+        <div class="flex items-center justify-center gap-3 lg:mt-28">
+            <img src="./images/logo.png" alt="">
+            <h1 class="text-3xl font-bold">Fruit Brust</h1>
+        </div>
+        <div class="flex flex-wrap gap-8 md:gap-14 items-center text-sm justify-center mt-[65px]">
+            <a href="" class="link link-hover hover:text-fruit-pink">Home</a>
+            <a href="" class="link link-hover hover:text-fruit-pink">About Us</a>
+            <a href="" class="link link-hover hover:text-fruit-pink">Shop</a>
+            <a href="" class="link link-hover hover:text-fruit-pink">All Fruits</a>
+            <a href="" class="link link-hover hover:text-fruit-pink">support</a>
+            <a href="" class="link link-hover hover:text-fruit-pink">My Account</a>
+        </div>
+        <div>
+            <div class="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-2xl md:text-4xl mt-[65px]">
+                <a href="" class="hover:text-fruit-pink"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="hover:text-fruit-pink"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="hover:text-fruit-pink"><i class="fa-brands fa-youtube"></i></a>
+                <a href="" class="hover:text-fruit-pink"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="" class="hover:text-fruit-pink"><i class="fa-brands fa-instagram"></i></a>
+                <a href="" class="hover:text-fruit-pink"><i class="fa-brands fa-apple"></i></a>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>
