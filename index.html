@@ -43,7 +43,7 @@
     <header class="max-w-[1440px] m-auto">
 
         <!-- nav for small and medium screens -->
-        <nav class="lg:hidden">
+        <nav class="lg:hidden mt-12">
             <div class="navbar bg-base-100">
                 <div class="flex-1">
                     <a class="btn btn-ghost normal-case text-xl">
@@ -110,12 +110,12 @@
 
 
         <!-- banner -->
-        <section class="max-w-[1440px] max-h-[600px] m-auto my-2 flex flex-col justify-center">
-            <div class="carousel w-full ">
+        <section class="max-w-[90%] md:max-w-[1440px] max-h-[600px] m-auto my-2 flex flex-col justify-center">
+            <div class="carousel w-full rounded-lg ">
                 <div id="slide1" class="carousel-item relative w-full " style="background-image: url('./images/banner1.png'); background-repeat: no-repeat;
                     background-size:cover;">
                     <div
-                        class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%]">
+                        class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%] ">
                         <div class="hero-content text-center ">
                             <div class="max-w-2xl ">
                                 <h1 class="lg:text-7xl text-2xl font-bold font-lato">Exotic tastes at your doorstep</h1>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <div id="slide2" class="carousel-item relative w-full " style="background-image: url('./images/banner2.png'); background-repeat: no-repeat;
-                background-size:100% 100%;">
+                background-size:cover;">
                     <div
                         class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%]">
                         <div class="hero-content text-center ">
@@ -156,7 +156,7 @@
                     </div>
                 </div>
                 <div id="slide3" class="carousel-item relative w-full " style="background-image: url('./images/banner3.png'); background-repeat: no-repeat;
-                background-size:100% 100%;">
+                background-size:cover;">
                     <div
                         class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%]">
                         <div class="hero-content text-center ">
@@ -177,7 +177,7 @@
                     </div>
                 </div>
                 <div id="slide4" class="carousel-item relative w-full " style="background-image: url('./images/banner4.png'); background-repeat: no-repeat;
-                background-size:100% 100%;">
+                background-size:cover;">
                     <div
                         class="hero w-full h-full  bg-gradient-to-b from-black text-white flex items-center justify-center p-[10.4%]">
                         <div class="hero-content text-center ">
@@ -229,7 +229,44 @@
     </header>
     <main>
         <!-- deal of the day -->
-        <section></section>
+        <section class="max-w-[90%] md:max-w-[1440px] m-auto my-2 flex flex-col justify-center">
+            <div class="deal">
+                <div>
+                    <h2>Deal of the day</h2>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div>
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            days
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:24;"></span>
+                            </span>
+                            min
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="countdown font-mono text-5xl">
+                                <span style="--value:45;"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
 
         <!-- Meet the team -->
         <section></section>
